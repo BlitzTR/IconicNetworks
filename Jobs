@@ -1,0 +1,41 @@
+TEAM_SPECGEN = AddExtraTeam("Specialist General", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/104_arf/104_arf.mdl",
+description = [[You are the Specialist General.]],
+weapons = {"keys", "weapon_chatterbox_minigun", "tfa_sw_dc17dual", "bf2017_dc15a",},
+command = "SpecGen",
+max = 1,
+salary = 500,
+category = "Republic Generals",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_CG = AddExtraTeam("Clone Guard: Commander Thorn", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/guard_thorn/guard_thorn.mdl",
+"models/reizer_cgi_p2/guard_snow_cmd/guard_snow_cmd.mdl",
+description = [[Clone Guard Commander Thorn.]],
+weapons = {"keys", "weapon_chatterbox_minigun", "weapon_policeshield", "tfa_sw_dc17dual", "cross_arms_swep", "weapon_taser", "stunstick", "weapon_cuff_elastic", "tfa_sw_repshot",},
+command = "CloneThorn",
+max = 1,
+salary = 250,
+category = "Clone Guard",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_CG = AddExtraTeam("Clone Guard: Executive Officer Fox", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/guard_fox/guard_fox.mdl",
+"models/reizer_cgi_p2/guard_snow_cmd/guard_snow_cmd.mdl",
+description = [[Clone Guard Executive Officer Fox.]],
+weapons = {"keys", "tfa_sw_dc17dual", "weapon_policeshield", "weapon_taser", "stunstick", "weapon_cuff_elastic", "tfa_sw_repshot",},
+command = "CloneFox",
+max = 1,
+salary = 200,
+category = "Clone Guard",
+admin = 0,
+vote = false,
+hasLicense = false
+})
