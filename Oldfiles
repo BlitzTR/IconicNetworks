@@ -1,440 +1,624 @@
-TEAM_CADET = DarkRP.createJob("Cadet", {
-color = Color(201, 65, 65, 255),
-model = {"models/player/clone cadet/clonecadet.mdl" },
-description = [[Your a cr get trained.]],
-weapons = {"clone_card_c1", "Keys",},
-command = "Cadet",
-max = 0,
-salary = 20,
-category = "Cadet"
-})
-
-TEAM_CLONETROOPER = DarkRP.createJob("Clone Trooper", {
-color = Color(201, 65, 65, 255),
-model = {"models/gonzo/ct327thpilotgmmed/ct/ct.mdl"},
-description = [[Your a ct.]],
-weapons = {"clone_card_c1", "weapon_752_dc15sa", "weapon_752_dc15a"},
-command = "CT",
-max = 99,
+TEAM_CADET = AddExtraTeam("Cadet", {
+color = Color(255, 255, 102, 255),
+model = "models/player/clone cadet/clonecadet.mdl",
+description = [[You are a cadet go get trained trooper!]],
+weapons = {"Keys","tfa_swch_dc15a_alt_training",},
+command = "CADET",
+max = 55,
 salary = 50,
-category = "Clone Troopers"
+category = "Cadet",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_CGTPR = DarkRP.createJob("Coruscant Guard Trooper", {
-color = Color(255, 255, 255, 255),
-model = {"models/reizer_cgi_p2/guard_trp/guard_trp.mdl",},
-description = [[you are a CG Trooper.]],
-weapons = {"bf2017_dc15s", "keys", "bf2017_dc17", "weapon_twist__dc15_side_arm_stun", "clone_card_c1", "weapon_hexshield",},
-command = "CGTRP",
+TEAM_CG = AddExtraTeam("Coruscant Guard Trooper", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/guard_trp/guard_trp.mdl",
+description = [[You are apart of the CG.]],
+weapons = {"bf2017_dc15s", "keys", "bf2017_dc17", "weapon_twist__dc15_side_arm_stun", "clone_card_c1", "weapon_hexshield", "arrest_stick",},
+command = "CGTPR",
 max = 25,
-salary = 200,
-category = "Coruscant Guard"
+salary = 100,
+category = "Coruscant Guard",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_CGSGT = DarkRP.createJob("Coruscant Guard Sergeant", {,
-color = Color(255, 255, 255, 255),
-model = {"models/reizer_cgi_p2/guard_lt/guard_lt.mdl",},
-description = [[you are a CG Trooper.]],
-weapons = {"bf2017_dc15s", "keys", "bf2017_dc17", "weapon_twist__dc15_side_arm_stun", "clone_card_c1", "weapon_hexshield",},
+TEAM_CG = AddExtraTeam("Coruscant Guard Sergeant", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/guard_lt/guard_lt.mdl",
+description = [[You are apart of the CG.]],
+weapons = {"bf2017_dc15s", "keys", "bf2017_dc17", "weapon_twist__dc15_side_arm_stun", "clone_card_c1", "weapon_hexshield", "weapon_sb2", "arrest_stick",},
 command = "CGSGT",
-max = 25,
-salary = 200,
-category = "Coruscant Guard"
+max = 15,
+salary = 150,
+category = "Coruscant Guard",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_CGLT = DarkRP.createJob("Coruscant Guard lieutenant", {,
-color = Color(255, 255, 255, 255),
-model = {"models/reizer_cgi_p2/guard_cpt/guard_cpt.mdl",},
-description = [[you are a CG Trooper.]],
-weapons = {"bf2017_dc15s", "keys", "bf2017_dc17", "weapon_twist__dc15_side_arm_stun", "clone_card_c2", "weapon_hexshield",},
-command = "CGLT",
-max = 10,
+TEAM_CG = AddExtraTeam("Coruscant Guard Commander Thorn", {
+color = Color(255, 255, 102, 255),
+model = "models/player/gideon/coruscantguards/thorn/cg_thorn.mdl",
+description = [[You are apart of the CG]],
+weapons = {"bf2017_dc15s", "keys", "bf2017_dc17", "weapon_twist__dc15_side_arm_stun", "weapon_sb2", "clone_card_c4", "tfa_weapon_sb2", "weapon_chatterbox_minigun", "weapon_hexshield", "tfa_sw_dc17dual", "arrest_stick",},
+command = "CGCO",
+max = 1,
+salary = 500,
+category = "Coruscant Guard",
+admin = 0,
+vote = false,
+hasLicense = false
+    })
+TEAM_CG = AddExtraTeam("Coruscant Guard EXO Fox", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/guard_fox/guard_fox.mdl",
+description = [[You are apart of the CG]],
+weapons = {"bf2017_dc15s", "keys", "bf2017_dc17", "weapon_twist__dc15_side_arm_stun", "weapon_sb2", "clone_card_c3", "tfa_weapon_sb2", "weapon_hexshield", "tfa_sw_dc17dual", "arrest_stick",},
+command = "CGEXO",
+max = 1,
 salary = 250,
-category = "Coruscant Guard"
+category = "Coruscant Guard",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_CGCPT = DarkRP.createJob("Coruscant Guard Captain", {,
-color = Color(255, 255, 255, 255),
-model = {"models/reizer_cgi_p2/guard_maj/guard_maj.mdl", }
-description = [[you are a CG Trooper.]],
-weapons = {"bf2017_dc15s", "keys", "bf2017_dc17", "weapon_twist__dc15_side_arm_stun", "clone_card_c2", "weapon_hexshield",},
-command = "CGCPT",
-max = 3,
-salary = 250,
-category = "Coruscant Guard"
-})
-
-TEAM_CGMJR = DarkRP.createJob("Coruscant Guard Major",{
-color = Color(255, 255, 255, 255),
-model = {"models/player/gideon/coruscantguards/stone/cg_stone.mdl", },
-description = [[you are a CG Trooper.]],
-weapons = {"bf2017_dc15s", "keys", "bf2017_dc17", "weapon_twist__dc15_side_arm_stun", "clone_card_c2", "tfa_weapon_sb2", "weapon_hexshield",},
+TEAM_CG = AddExtraTeam("Coruscant Guard Major", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/guard_maj/guard_maj.mdl",
+description = [[You are apart of the CG]],
+weapons = {"bf2017_dc15s", "keys", "bf2017_dc17", "weapon_twist__dc15_side_arm_stun", "clone_card_c2", "weapon_sb2", "tfa_weapon_sb2", "weapon_hexshield", "arrest_stick",},
 command = "CGMJR",
 max = 1,
 salary = 250,
-category = "Coruscant Guard"
+category = "Coruscant Guard",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_CGEXO = DarkRP.createJob("Coruscant Guard EXO Fox",{
-color = Color(255, 255, 255, 255),
-model = {"models/reizer_cgi_p2/guard_fox/guard_fox.mdl", },
-description = [[you are a CG Trooper.]],
-weapons = {"bf2017_dc15s", "keys", "bf2017_dc17", "weapon_twist__dc15_side_arm_stun", "clone_card_c3", "tfa_weapon_sb2", "weapon_hexshield",},
-command = "CGFOX",
-max = 1,
-salary = 300,
-category = "Coruscant Guard"
+TEAM_CG = AddExtraTeam("Coruscant Guard Captain", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/guard_maj/guard_maj.mdl",
+description = [[You are apart of the CG]],
+weapons = {"bf2017_dc15s", "keys", "bf2017_dc17", "weapon_twist__dc15_side_arm_stun", "weapon_sb2", "clone_card_c2", "weapon_hexshield", "arrest_stick",},
+command = "CGCPT",
+max = 5,
+salary = 250,
+category = "Coruscant Guard",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_CGCO = DarkRP.createJob("Coruscant Guard Commander Thorn", {,
-color = Color(255, 255, 255, 255),
-model = {"models/player/gideon/coruscantguards/thorn/cg_thorn.mdl", },
-description = [[you are a CG Trooper.]],
-weapons = {"bf2017_dc15s", "keys", "bf2017_dc17", "weapon_twist__dc15_side_arm_stun", "clone_card_c4", "tfa_weapon_sb2", "weapon_chatterbox_minigun", "weapon_hexshield",},
-command = "CGTHORN",
-max = 1,
-salary = 500,
-category = "Coruscant Guard"
+TEAM_CG = AddExtraTeam("Coruscant Guard lieutenant", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/guard_cpt/guard_cpt.mdl",
+description = [[You are apart of the CG]],
+weapons = {"bf2017_dc15s", "keys", "bf2017_dc17", "weapon_twist__dc15_side_arm_stun", "weapon_sb2", "clone_card_c2", "weapon_hexshield", "arrest_stick",},
+command = "CGLT",
+max = 10,
+salary = 250,
+category = "Coruscant Guard",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-
-TEAM_ARCFORDO = DarkRP.createJob("ARC Trooper Fordo",{
-color = Color(255, 255, 255, 255),
-model = {"models/player/blt/honeydew/arc/tomato/fordo/arc01.mdl", },
+TEAM_ARC = AddExtraTeam("ARC Trooper Fordo", {
+color = Color(255, 255, 102, 255),
+model = "models/player/blt/honeydew/arc/tomato/fordo/arc01.mdl",
 description = [[you are apart of ARC.]],
-weapons = {"bf2017_dc17", "weapon_jew_iondisruptor", "Keys", "clone_card_c3", "zeus_smokegranade", "zeus_flashbang", "weapon_jew_dc19", "clone_card_c4",},
+weapons = {"bf2017_dc17", "weapon_jew_iondisruptor", "Keys", "clone_card_c3", "zeus_smokegranade", "zeus_flashbang", "weapon_jew_dc19", "clone_card_c4", "weapon_camo_fix", "weapon_thehiddenblade",},
 command = "ARCFORDO",
 max = 1,
 salary = 500,
-category = "ARC Troopers"
+category = "ARC Troopers",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_ARCECHO = DarkRP.createJob("ARC Trooper Echo", {,
+TEAM_ARC = DarkRP.createJob("ARC Trooper Echo",{
 color = Color(255, 255, 255, 255),
-model = {"models/reizer_cgi_p2/arc_echo/arc_echo.mdl",},
+model = {"models/reizer_cgi_p2/arc_echo/arc_echo.mdl", },
 description = [[you are apart of ARC.]],
-weapons = {"bf2017_dc17", "Keys", "clone_card_c3", "zeus_smokegranade", "zeus_flashbang", "weapon_camo_fix", "weapon_bacta_grenade", "weapon_jew_bactakit", "weapon_jew_stimkit", "tfa_weapon_sb2", "clone_card_c4",},
+weapons = {"bf2017_dc17", "Keys", "zeus_smokegranade", "zeus_flashbang", "weapon_bacta_grenade", "weapon_jew_bactakit", "weapon_jew_stimkit", "weapon_sb2", "clone_card_c4",},
 command = "ARCECHO",
 max = 1,
 salary = 500,
-category = "ARC Troopers"
+category = "ARC Troopers",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_ARCEFIVES = DarkRP.createJob("ARC Trooper Fives", {,
+TEAM_ARC = DarkRP.createJob("ARC Trooper Fives",{
 color = Color(255, 255, 255, 255),
-model = {"models/player/arc/deltaph2/091/fives2/fivesphase2cg.mdl",},
+model = {"models/player/arc/deltaph2/091/fives2/fivesphase2cg.mdl", },
 description = [[you are apart of ARC.]],
-weapons = {"bf2017_dc17", "Keys", "clone_card_c3", "zeus_smokegranade", "zeus_flashbang", "weapon_camo_fix", "weapon_jew_det", "clone_card_c4",},
+weapons = {"bf2017_dc17", "Keys", "zeus_smokegranade", "zeus_flashbang", "weapon_camo_fix", "weapon_jew_det", "clone_card_c4",},
 command = "ARCFIVES",
 max = 1,
 salary = 500,
-category = "ARC Troopers"
+category = "ARC Troopers",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_ARCECOLT = DarkRP.createJob("ARC Trooper Colt", {,
-color = Color(255, 255, 255, 255),
-model = {"models/reizer_cgi_p2/rancor_colt/rancor_colt.mdl",},
-description = [[you are apart of ARC.]],
-weapons = {"weapon_thehiddenblade", "weapon_camo_fix", "weapon_chatterbox_minigun", "weapon_jew_iondisruptor", "clone_card_c4",},
+TEAM_ARC = AddExtraTeam("ARC Commander Colt", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/rancor_colt/rancor_colt.mdl",
+description = [[you are the leader of ARC.]],
+weapons = {"weapon_thehiddenblade", "weapon_camo_fix", "weapon_sb2", "weapon_chatterbox_minigun", "weapon_jew_iondisruptor", "clone_card_c4", "weapon_camo_fix", "zeus_flashbang", "zeus_smokegranade", "weapon_jew_det", "weapon_bacta_grenade", "weapon_jew_bactakit", "weapon_jew_stimkit", "weapon_sb2",},
 command = "ARCCOLT",
 max = 1,
 salary = 500,
-category = "ARC Troopers"
+category = "ARC Troopers",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_JEDIPAD = DarkRP.createJob("Jedi Padawan", {,
-color = Color(255, 255, 255, 255),
-model = {"models/padawan3/padawan3.mdl"},
-description = [[you are apart of The Jedi Order.]],
-weapons = {"Keys", "weapon_lightsaber", "clone_card_c3",},
-command = "JEDIPADDIE",
-max = 15,
-salary = 250,
-category = "Jedi"
-})
-
-TEAM_JEDIKNIGHT = DarkRP.createJob("Jedi Knight", {,
-color = Color(255, 255, 255, 255),
-model = {"models/padawan3/padawan3.mdl"},
-description = [[you are apart of The Jedi Order.]],
-weapons = {"Keys", "weapon_lightsaber", "clone_card_c3",},
-command = "JEDIKNIGHT",
-max = 15,
-salary = 250,
-category = "Jedi"
-})
-
-TEAM_JEDIMAS = DarkRP.createJob("Jedi Master", {,
-color = Color(255, 255, 255, 255),
-model = {"models/padawan3/padawan3.mdl"},
-description = [[you are apart of The Jedi Order.]],
-weapons = {"Keys", "weapon_lightsaber", "clone_card_c4",},
-command = "JEDIMAS",
-max = 10,
-salary = 350,
-category = "Jedi"
-})
-
-TEAM_JEDICO = DarkRP.createJob("Jedi Commander", {,
-color = Color(255, 255, 255, 255),
-model = {"models/padawan3/padawan3.mdl"},
-description = [[you are apart of The Jedi Order.]],
-weapons = {"Keys", "weapon_lightsaber", "clone_card_c4",},
-command = "JEDICO",
-max = 5,
-salary = 250,
-category = "Jedi"
-})
-
-TEAM_JEDIPLO = DarkRP.createJob("Jedi General Plo Koon", {,
-color = Color(255, 255, 255, 255),
-model = {"models/player/plokoon/plokoon.mdl"},
-description = [[you are apart of The Jedi Order.]],
-weapons = {"Keys", "weapon_lightsaber", "clone_card_c4",},
-command = "JEDIPLO",
-max = 1,
-salary = 500,
-category = "Jedi Council"
-})
-
-TEAM_JEDIANI = DarkRP.createJob("Jedi General Anakin Skywalker", {,
-color = Color(255, 255, 255, 255),
-model = {"models/tfa/comm/pm_sw_anakin_skywalker.mdl"},
-description = [[you are apart of The Jedi Order.]],
+TEAM_Jedi = AddExtraTeam("Jedi General Anakin Skywalker", {
+color = Color(255, 255, 102, 255),
+model = "models/tfa/comm/pm_sw_anakin_skywalker.mdl",
+description = [[you are apart of The Jedi Order]],
 weapons = {"Keys", "weapon_lightsaber", "clone_card_c4",},
 command = "JEDIANI",
 max = 1,
 salary = 500,
-category = "Jedi Council"
+category = "Jedi",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_JEDIKIADI = DarkRP.createJob("Jedi General Ki Adi Mundi", {,
-color = Color(255, 255, 255, 255),
-model = {"models/tfa/comm/gg/pm_sw_mundi.mdl"},
-description = [[you are apart of The Jedi Order.]],
-weapons = {"Keys", "weapon_lightsaber", "clone_card_c4",},
-command = "JEDIMUNDI",
-max = 1,
-salary = 500,
-category = "Jedi Council"
-})
-
-TEAM_YODA = DarkRP.createJob("Grand Master Yoda", {,
-color = Color(255, 255, 255, 255),
-model = {"models/tfa/comm/gg/pm_sw_yodanojig.mdll"},
-description = [[you are apart of The Jedi Order.]],
+TEAM_Jedi = AddExtraTeam("Jedi High General Obi Wan Kenobi", {
+color = Color(255, 255, 102, 255),
+model = "models/player/generalkenobi/cgikenobi.mdl",
+description = [[you are apart of The Jedi Order]],
 weapons = {"Keys", "weapon_lightsaber", "clone_card_c3navy",},
-command = "JEDIYODA",
+command = "JEDIOBIWAN",
 max = 1,
-salary = 150000,
-category = "Jedi Council"
+salary = 5000,
+category = "Jedi",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_JEDIMACE = DarkRP.createJob("Master Of The Force Mace Windu", {,
-color = Color(255, 255, 255, 255),
-model = {"models/player/mace/mace.mdl"},
-description = [[you are apart of The Jedi Order.]],
-weapons = {"Keys", "weapon_lightsaber", "clone_card_c3navy",},
-command = "JEDIMACE",
-max = 1,
-salary = 500,
-category = "Jedi Council"
-})
-
-TEAM_JEDIMACE = DarkRP.createJob("Jedi Master Kit Fisto", {,
-color = Color(255, 255, 255, 255),
-model = {"models/tfa/comm/gg/pm_sw_fisto.mdl"},
-description = [[you are apart of The Jedi Order.]],
-weapons = {"Keys", "weapon_lightsaber", "clone_card_c4",},
-command = "JEDIKIT",
-max = 1,
-salary = 500,
-category = "Jedi Council"
-})
-
-TEAM_JEDIOBI = DarkRP.createJob("Jedi General Obi Wan Kenobi", {,
-color = Color(255, 255, 255, 255),
-model = {"models/player/generalkenobi/cgikenobi.mdl"},
-description = [[you are apart of The Jedi Order.]],
-weapons = {"Keys", "weapon_lightsaber", "clone_card_c3navy",},
-command = "JEDIOBI",
-max = 1,
-salary = 500,
-category = "Jedi Council"
-})
-
-TEAM_JEDITINN = DarkRP.createJob("Jedi Master Saesee Tinn", {,
-color = Color(255, 255, 255, 255),
-model = {"models/gonzo/saeseetiin/saeseetiin.mdl"},
-description = [[you are apart of The Jedi Order.]],
-weapons = {"Keys", "weapon_lightsaber", "clone_card_c3",},
-command = "JEDITIN",
-max = 1,
-salary = 500,
-category = "Jedi Council"
-})
-
-TEAM_JEDITINN = DarkRP.createJob("Jedi Master Saesee Tinn", {,
-color = Color(255, 255, 255, 255),
-model = {"models/gonzo/saeseetiin/saeseetiin.mdl"},
-description = [[you are apart of The Jedi Order.]],
-weapons = {"Keys", "weapon_lightsaber", "clone_card_c3",},
-command = "JEDITIN",
-max = 1,
-salary = 500,
-category = "Jedi Council"
-})
-
-TEAM_JEDIKOTH = DarkRP.createJob("Jedi Master Eeth Koth", {,
-color = Color(255, 255, 255, 255),
-model = {"models/tfa/comm/gg/pm_sw_eeth_koth.mdl"},
-description = [[you are apart of The Jedi Order.]],
-weapons = {"Keys", "weapon_lightsaber", "clone_card_c3",},
-command = "JEDIKOTH",
-max = 1,
-salary = 500,
-category = "Jedi Council"
-})
-
-TEAM_FIVEOFIRSTTRP = DarkRP.createJob("501st Trooper", {
-color = Color(201, 65, 65, 255),
-model = {"models/reizer_cgi_p2/machine/clones/501st_7345_raven/501st_7345_raven_01.mdl"},
-description = [[Your apart of the 501st.]],
-weapons = {"clone_card_c1", "Keys", "weapon_752_dc15a"},
-command = "FIVEOFIRSTTRP",
-max = 25,
-salary = 150,
-category = "501st"
-})
-
-TEAM_FIVEOFIRSTSGT = DarkRP.createJob("501st Sergeant", {
-color = Color(201, 65, 65, 255),
-model = {"models/reizer_cgi_p2/501_lt/501_lt.mdl"},
-description = [[Your apart of the 501st.]],
-weapons = {"clone_card_c1", "Keys", "weapon_tfa_dc15sa501", "weapon_tfa_dc15a501",},
-command = "FIVEOFIRSTSGT",
-max = 25,
-salary = 150,
-category = "501st"
-})
-
-TEAM_FIVEOFIRSTLT = DarkRP.createJob("501st lieutenant", {
-color = Color(201, 65, 65, 255),
-model = {"models/reizer_cgi_p2/501_cpt/501_cpt.mdl"},
-description = [[Your apart of the 501st.]],
-weapons = {"clone_card_c2", "Keys", "weapon_tfa_dc15sa501", "weapon_tfa_dc15a501",},
-command = "FIVEOFIRSTSGT",
+TEAM_EOD = AddExtraTeam("EOD Trooper", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/eod_trp/eod_trp.mdl",
+description = [[You're a EOD Trooper.]],
+weapons = {"clone_card_c1", "Keys", "bf2017_dc15s", "bf2017_dc17", "lockpick",},
+command = "EODTROOPER",
 max = 15,
 salary = 150,
-category = "501st"
+category = "EOD",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_FIVEOFIRSTCPT = DarkRP.createJob("501st Captain", {
-color = Color(201, 65, 65, 255),
-model = {"models/reizer_cgi_p2/501_cpt/501_cpt.mdl"},
-description = [[Your apart of the 501st.]],
-weapons = {"clone_card_c3", "Keys", "weapon_tfa_dc15sa501", "weapon_tfa_dc15a501",},
+TEAM_EOD = AddExtraTeam("EOD Sergeant", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/eod_trp/eod_trp.mdl",
+description = [[You're a EOD Trooper.]],
+weapons = {"clone_card_c1", "Keys", "bf2017_dc15s", "bf2017_dc17", "lockpick",},
+command = "EODSGT",
+max = 15,
+salary = 150,
+category = "EOD",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_EOD = AddExtraTeam("EOD lieutenant", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/eod_cpt/eod_cpt.mdl",
+description = [[You're a EOD Trooper.]],
+weapons = {"clone_card_c1", "Keys", "bf2017_dc15s", "bf2017_dc17", "lockpick",},
+command = "EODLT",
+max = 10,
+salary = 150,
+category = "EOD",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_EOD = AddExtraTeam("EOD Captain", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/eod_cpt/eod_cpt.mdl",
+description = [[You're a EOD Trooper.]],
+weapons = {"clone_card_c1", "Keys", "bf2017_dc15s", "bf2017_dc17", "lockpick",},
+command = "EODCPT",
+max = 3,
+salary = 250,
+category = "EOD",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_EOD = AddExtraTeam("EOD Major", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/eod_cpt/eod_cpt.mdl",
+description = [[You're a EOD Trooper.]],
+weapons = {"clone_card_c1", "Keys", "bf2017_dc15s", "bf2017_dc17", "lockpick",},
+command = "EODMJR",
+max = 1,
+salary = 350,
+category = "EOD",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_EOD = AddExtraTeam("EOD EXO", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/eod_cpt/eod_cpt.mdl",
+description = [[You're a EOD Trooper.]],
+weapons = {"clone_card_c1", "Keys", "bf2017_dc15s", "bf2017_dc17", "lockpick",},
+command = "EODEXO",
+max = 1,
+salary = 350,
+category = "EOD",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_EOD = AddExtraTeam("EOD Commander", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/eod_cmd/eod_cmd.mdl",
+description = [[You're a EOD Trooper.]],
+weapons = {"clone_card_c1", "Keys", "bf2017_dc15s", "bf2017_dc17", "lockpick",},
+command = "EODCOMMANDER",
+max = 1,
+salary = 350,
+category = "EOD",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_FIVEOFIRST = AddExtraTeam("501st Sergeant", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/501_lt/501_lt.mdl",
+description = [[You're a 501st trooper.]],
+weapons = {"clone_card_c1", "Keys", "weapon_tfa_dc15sa501", "weapon_tfa_dc15a501"},
+command = "FIVEOFIRSTSGT",
+max = 10,
+salary = 250,
+category = "501st",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_FIVEOFIRST = AddExtraTeam("501st lieutenant", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/501_cpt/501_cpt.mdl",
+description = [[You're a 501st trooper.]],
+weapons = {"clone_card_c2", "Keys", "weapon_tfa_dc15sa501", "weapon_tfa_dc15a501"},
+command = "FIVEOFIRSTLT",
+max = 10,
+salary = 250,
+category = "501st",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_FIVEOFIRST = AddExtraTeam("501st Captain", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/501_cpt/501_cpt.mdl",
+description = [[You're a 501st trooper.]],
+weapons = {"clone_card_c2", "Keys", "weapon_tfa_dc15sa501", "weapon_tfa_dc15a501"},
 command = "FIVEOFIRSTCPT",
 max = 5,
 salary = 250,
-category = "501st"
+category = "501st",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_FIVEOFIRSTMJR = DarkRP.createJob("501st Major", {
-color = Color(201, 65, 65, 255),
-model = {"models/reizer_cgi_p2/501_col/501_col.mdl"},
-description = [[Your apart of the 501st.]],
-weapons = {"clone_card_c3", "Keys", "weapon_tfa_dc15sa501", "weapon_tfa_dc15a501",},
+TEAM_FIVEOFIRST = AddExtraTeam("501st Major", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/501_col/501_col.mdl",
+description = [[You're a 501st trooper.]],
+weapons = {"clone_card_c3", "Keys", "weapon_tfa_dc15sa501", "weapon_tfa_dc15a501"},
 command = "FIVEOFIRSTMJR",
-max = 1,
-salary = 350,
-category = "501st"
+max = 5,
+salary = 250,
+category = "501st",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_FIVEOFIRSTEXO = DarkRP.createJob("501st EXO", {
-color = Color(201, 65, 65, 255),
-model = {"models/reizer_cgi_p2/501_col/501_col.mdl"},
-description = [[Your apart of the 501st.]],
-weapons = {"clone_card_c3", "Keys", "weapon_tfa_dc15sa501", "weapon_tfa_dc15a501", "weapon_chatterbox_minigun",},
+TEAM_FIVEOFIRST = AddExtraTeam("501st EXO", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/501_col/501_col.mdl",
+description = [[You're a 501st trooper.]],
+weapons = {"clone_card_c4", "Keys", "weapon_tfa_dc15sa501", "weapon_tfa_dc15a501"},
 command = "FIVEOFIRSTEXO",
 max = 1,
-salary = 450,
-category = "501st"
+salary = 250,
+category = "501st",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_FIVEOFIRSTSL = DarkRP.createJob("501st Squad Lead Rex", {
-color = Color(201, 65, 65, 255),
-model = {"models/reizer_cgi_p2/501_rex/501_rex.mdl"},
-description = [[You're rex, leader of the 501st.]],
-weapons = {"clone_card_c4", "Keys", "weapon_tfa_dc15sa501", "weapon_tfa_dc15a501", "weapon_chatterbox_minigun",},
-command = "FIVEOFIRSTSL",
+TEAM_FIVEOFIRST = AddExtraTeam("501st Squad Lead Rex", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/501_rex/501_rex.mdl",
+description = [[You're a 501st trooper.]],
+weapons = {"clone_card_c4", "Keys", "weapon_tfa_dc15sa501", "weapon_tfa_dc15a501", "tfa_sw_dc17dual"},
+command = "FIVEOFIRSTREXX",
 max = 1,
-salary = 450,
-category = "501st"
+salary = 500,
+category = "501st",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_FIVEOFIRSTCO = DarkRP.createJob("501st Squad Commander Appo", {
-color = Color(201, 65, 65, 255),
-model = {"models/reizer_cgi_p2/501_appo/501_appo.mdl"},
-description = [[You're the Commander of the 501st.]],
-weapons = {"clone_card_c4", "Keys", "weapon_tfa_dc15sa501", "weapon_tfa_dc15a501", "weapon_chatterbox_minigun",},
+TEAM_FIVEOFIRST = AddExtraTeam("501st Commander Appo", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/501_appo/501_appo.mdl",
+description = [[You're a 501st trooper.]],
+weapons = {"clone_card_c4", "Keys", "weapon_tfa_dc15sa501", "weapon_tfa_dc15a501", "weapon_chatterbox_minigun"},
 command = "FIVEOFIRSTCO",
 max = 1,
 salary = 500,
-category = "501st"
+category = "501st",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_BOSS = DarkRP.createJob("RC-1138 Boss", {
-color = Color(201, 65, 65, 255),
-model = {"models/reizer_cgi_p2/rc_boss_clean/rc_boss_clean.mdl"},
-description = [[You're the Leader of delta!.]],
-weapons = {"clone_card_c4", "Keys", "weapon_752_dc17m_br", "bf2017_dc17", "weapon_752_dc17m_sn", "weapon_jew_dc17m_at", "dc17m_shotgun", "weapon_chatterbox_minigun", "weapon_jew_iondisruptor",},
-command = "DELTABOSS",
-max = 1,
-salary = 500,
-category = "Delta Squad"
+TEAM_FIVEOFIRST = AddExtraTeam("501st trooper", {
+color = Color(255, 255, 102, 255),
+model = "models/reizer_cgi_p2/501_trp/501_trp.mdl",
+description = [[You're a 501st trooper.]],
+weapons = {"clone_card_c1", "Keys", "weapon_tfa_dc15sa501", "weapon_tfa_dc15a501",},
+command = "FIVEOFIRSTTRP",
+max = 25,
+salary = 150,
+category = "501st",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_SEV = DarkRP.createJob("RC-1207 Sev, {
-color = Color(201, 65, 65, 255),
-model = {"models/reizer_cgi_p2/rc_sev_clean/rc_sev_clean.mdl"},
-description = [[You're apart delta!.]],
-weapons = {"clone_card_c3", "Keys", "weapon_752_dc17m_br", "bf2017_dc17", "weapon_752_dc17m_sn", "weapon_camo_fix", "weapon_thehiddenblade", "weapon_jew_iondisruptor",},
-command = "DELTASEV",
-max = 1,
-salary = 500,
-category = "Delta Squad"
+TEAM_FOURTYFIRST = AddExtraTeam("41st Trooper", {
+color = Color(255, 255, 102, 255),
+model = "models/gonzo/41st/41sttrpp2/41sttrpp2.mdl",
+description = [[You're a 41st trooper.]],
+weapons = {"clone_card_c1", "Keys", "dc17grapple", "bf2017_dc15s", "bf2017_dc17"},
+command = "FERERE",
+max = 25,
+salary = 150,
+category = "41st",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_SCORCH = DarkRP.createJob("RC-1262 Scorch, {
-color = Color(201, 65, 65, 255),
-model = {"models/reizer_cgi_p2/rc_scorch_clean/rc_scorch_clean.mdl"},
-description = [[You're apart delta!.]],
-weapons = {"clone_card_c3", "Keys", "weapon_752_dc17m_br", "bf2017_dc17", "weapon_swrc_det", "weapon_jew_dc17m_at", "seal6-c4",},
-command = "DELTASCHORCH",
-max = 1,
-salary = 500,
-category = "Delta Squad"
+TEAM_FOURTYFIRST = AddExtraTeam("41st Sergeant", {
+color = Color(255, 255, 102, 255),
+model = "models/gonzo/41stadditionalclasses/sergeant/sergeant.mdl",
+description = [[You're a 41st trooper.]],
+weapons = {"clone_card_c1", "Keys", "dc17grapple", "bf2017_dc15s", "bf2017_dc17"},
+command = "FERERDE",
+max = 10,
+salary = 150,
+category = "41st",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_FIXER = DarkRP.createJob("RC-1140 Fixer, {
-color = Color(201, 65, 65, 255),
-model = {"models/reizer_cgi_p2/rc_fixer_clean/rc_fixer_clean.mdl"},
-description = [[You're apart delta!.]],
-weapons = {"clone_card_c3", "Keys", "weapon_752_dc17m_br", "bf2017_dc17", "zeus_thermaldet", "weapon_chatterbox_minigun", "weapon_jew_e60r", "weapon_jew_iondisruptor", "weapon_jew_stimkit", "weapon_bacta_grenade", "weapon_jew_bactakit",},
-command = "DELTAFIXER",
-max = 1,
-salary = 500,
-category = "Delta Squad"
+TEAM_FOURTYFIRST = AddExtraTeam("41st Sniper", {
+color = Color(255, 255, 102, 255),
+model = "models/gonzo/41stadditionalclasses/sergeant/sergeant.mdl",
+description = [[You're a 41st trooper.]],
+weapons = {"clone_card_c2", "Keys", "dc17grapple", "bf2017_dc15s", "bf2017_dc17", "weapon_jew_iondisruptor", "tfa_swch_dc17m_sn", "tfa_sw_repsnip",},
+command = "FERERRTDE",
+max = 10,
+salary = 150,
+category = "41st",
+admin = 0,
+vote = false,
+hasLicense = false
 })
-
-TEAM_FIXER = DarkRP.createJob("RC-1140 Fixer, {
-color = Color(201, 65, 65, 255),
-model = {"models/reizer_cgi_p2/rc_fixer_clean/rc_fixer_clean.mdl"},
-description = [[You're apart delta!.]],
-weapons = {"clone_card_c3", "Keys", "weapon_752_dc17m_br", "bf2017_dc17", "zeus_thermaldet", "weapon_chatterbox_minigun", "weapon_jew_e60r", "weapon_jew_iondisruptor", "weapon_jew_stimkit", "weapon_bacta_grenade", "weapon_jew_bactakit",},
-command = "DELTAFIXER",
+TEAM_FOURTYFIRST = AddExtraTeam("41st lieutenant", {
+color = Color(255, 255, 102, 255),
+model = "models/gonzo/41st/41stcptp2/41stcptp2.mdl",
+description = [[You're a 41st trooper.]],
+weapons = {"clone_card_c2", "Keys", "dc17grapple", "bf2017_dc15s", "bf2017_dc17"},
+command = "FEDRERDE",
+max = 10,
+salary = 150,
+category = "41st",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_FOURTYFIRST = AddExtraTeam("41st Captain", {
+color = Color(255, 255, 102, 255),
+model = "models/gonzo/41st/41stcptp2/41stcptp2.mdl",
+description = [[You're a 41st trooper.]],
+weapons = {"clone_card_c2", "Keys", "dc17grapple", "bf2017_dc15s", "bf2017_dc17"},
+command = "FEREARDE",
+max = 5,
+salary = 150,
+category = "41st",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_FOURTYFIRST = AddExtraTeam("41st Major", {
+color = Color(255, 255, 102, 255),
+model = "models/gonzo/41stadditionalclasses/arc/arc.mdl",
+description = [[You're a 41st trooper.]],
+weapons = {"clone_card_c2", "Keys", "dc17grapple", "bf2017_dc15s", "bf2017_dc17"},
+command = "FERERDEOOF",
 max = 1,
-salary = 500,
-category = "Delta Squad"
+salary = 150,
+category = "41st",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_FOURTYFIRST = AddExtraTeam("41st EXO", {
+color = Color(255, 255, 102, 255),
+model = "models/gonzo/41stadditionalclasses/commander/commander.mdl",
+description = [[You're a 41st trooper.]],
+weapons = {"clone_card_c3", "Keys", "dc17grapple", "bf2017_dc15s", "bf2017_dc17", "weapon_jew_iondisruptor",},
+command = "FEREREXODEOOF",
+max = 1,
+salary = 150,
+category = "41st",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_FOURTYFIRST = AddExtraTeam("41st Commander Gree", {
+color = Color(255, 255, 102, 255),
+model = "models/player/gideon/greencompany/gree/41stgc_gree.mdl",
+description = [[You're a 41st trooper.]],
+weapons = {"clone_card_c4", "Keys", "dc17grapple", "bf2017_dc15s", "bf2017_dc17", "weapon_jew_iondisruptor",},
+command = "FERCO",
+max = 1,
+salary = 150,
+category = "41st",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_JEDI = AddExtraTeam("Jedi Padawab Ahsoka", {
+color = Color(255, 255, 102, 255),
+model = "models/tfa/comm/gg/pm_sw_ahsoka_v1.mdl",
+description = [[You're a jedi.]],
+weapons = {"Keys", "weapon_lightsaber", "clone_card_c3",},
+command = "JEDAH",
+max = 1,
+salary = 350,
+category = "Jedi",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_FLEET = AddExtraTeam("Fleet Ensign", {
+color = Color(255, 255, 102, 255),
+model = "models/player/bridgestaff/cgibridgestaff.mdl",
+description = [[You're a Fleet member.]],
+weapons = {"Keys", "clone_card_c3navy", "weapon_752_dc15sa"},
+command = "FLEETENG",
+max = 5,
+salary = 350,
+category = "Fleet",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_FLEET = AddExtraTeam("Fleet Officer", {
+color = Color(255, 255, 102, 255),
+model = "models/player/bridgestaff/cgibridgestaff.mdl",
+description = [[You're a Fleet member.]],
+weapons = {"Keys", "clone_card_c3navy", "weapon_752_dc15sa"},
+command = "FLEETOfficer",
+max = 5,
+salary = 350,
+category = "Fleet",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_FLEET = AddExtraTeam("Fleet lieutenant", {
+color = Color(255, 255, 102, 255),
+model = "models/player/bridgestaff/cgibridgestaff.mdl",
+description = [[You're a Fleet member.]],
+weapons = {"Keys", "clone_card_c3navy", "weapon_752_dc15sa"},
+command = "FLEETLT",
+max = 5,
+salary = 350,
+category = "Fleet",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_FLEET = AddExtraTeam("Fleet Capitan", {
+color = Color(255, 255, 102, 255),
+model = "models/player/bridgestaff/cgibridgestaff.mdl",
+description = [[You're a Fleet member.]],
+weapons = {"Keys", "clone_card_c3navy", "weapon_752_dc15sa"},
+command = "FLEETCPT",
+max = 1,
+salary = 350,
+category = "Fleet",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_FLEET = AddExtraTeam("Fleet Admiral Wullf", {
+color = Color(255, 255, 102, 255),
+model = "models/player/wullf/wullf.mdl",
+description = [[You're the head of fleet.]],
+weapons = {"Keys", "clone_card_c3navy", "weapon_752_dc15sa"},
+command = "FLEETADMIRAL",
+max = 1,
+salary = 3050,
+category = "Fleet",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_CT = AddExtraTeam("Clone Trooper", {
+color = Color(255, 255, 102, 255),
+model = "models/ct_cptm/cgi ctp2.mdl",
+description = [[You're a Clone Trooper.]],
+weapons = {"clone_card_c1", "bf2017_dc15s", "bf2017_dc17"},
+command = "CTRP",
+max = 50,
+salary = 150,
+category = "Clone Trooper",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_SITH = AddExtraTeam("Count Dooku", {
+color = Color(255, 255, 102, 255),
+model = "models/tfa/comm/gg/pm_sw_dooku.mdl",
+description = [[EVENT.]],
+weapons = {"Keys", "weapon_lightsaber", "clone_card_c3navy",},
+command = "DOOKUOOO",
+max = 1,
+salary = 10050,
+category = "Other",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_BTWODROID = AddExtraTeam("B2 Battle droid", {
+color = Color(255, 255, 102, 255),
+model = "models/player/valley/aquadroid.mdl",
+description = [[EVENT.]],
+weapons = {"Keys", "b2_wrist_blaster", "clone_card_c3navy",},
+command = "BTWO",
+max = 15,
+salary = 10050,
+category = "Other",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_CODROID = AddExtraTeam("Commando Droid", {
+color = Color(255, 255, 102, 255),
+model = "models/tfa/comm/gg/pm_sw_droid_commando.mdl",
+description = [[EVENT.]],
+weapons = {"Keys", "e5s_sniper_rifle", "clone_card_c3navy", "e5_commando_blaster", "e60r_rocket_launcher", "se14_blaster_pistol", "tfa_sw_cisshot", "alydus_fortificationbuildertablet",},
+command = "CODROID",
+max = 5,
+salary = 1005000,
+category = "Other",
+admin = 0,
+vote = false,
+hasLicense = false
+})
+TEAM_SHADOWCO = AddExtraTeam("Shadow Commando", {
+color = Color(255, 255, 102, 255),
+model = "models/player/shadow/shadow/shadow.mdl",
+description = [[You're a Shadow, you are all equal you are all brother made to serve and protect the republic and her secrects no matter how dark, you are shadow.]],
+weapons = {"Keys", "weapon_tfa_dc15sashadow", "tfa_f11_shadow", "tfa_sw_dual_de10", "tfa_dc17chrome", "weapon_camo_fix", "weapon_thehiddenblade", "weapon_bactanade", "weapon_hexshield", "weapon_defibrilator", "tfa_swch_z6", "flamethrower_basic", "tfa_swch_clonelauncher_3",},
+command = "SSHAADDOOWW",
+max = 4,
+salary = 1000,
+category = "Shadow Commando's",
+admin = 0,
+vote = false,
+hasLicense = false
 })
