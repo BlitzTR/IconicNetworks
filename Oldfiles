@@ -622,3 +622,16 @@ admin = 0,
 vote = false,
 hasLicense = false
 })
+TEAM_SUPG = AddExtraTeam("Supreme General", {
+color = Color(255, 255, 102, 255),
+model = "models/player/gideon/shadow/trooper/shadow_ph2trooper.mdl",
+description = [[gay]],
+weapons = {"Keys", "clone_card_c8", "tfa_e11d_extended", "tfa_sw_repsnip", "tfa_swch_z6"},
+command = "GGAY",
+max = 1,
+salary = 1000,
+category = "Generals",
+admin = 0,
+vote = false,
+hasLicense = false
+})
